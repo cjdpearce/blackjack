@@ -1,14 +1,10 @@
 package com.cjdpearce.blackjack
 
-import java.util.*
+class CardHand {
+    var cardHand:MutableMap<String,String> = mutableMapOf()
 
-class cardHand {
-    fun createHand(){
-        val cardHand:ArrayList<Objects>
-        println("you have referenced me!")
-    }
-
-    fun addCard(){
-
+    fun addCard(card: String){
+        cardHand.put(card.toString(),"bdfjdfjfb")
+        println(cardHand)
     }
 }
