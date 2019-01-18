@@ -17,13 +17,6 @@ fun main(args: Array<String>) {
     }
 }
 
-private fun initDeal() {
-    for (i in 1..2) {
-        playersHand.addCard(cardDeck.getCard())
-        dealersHand.addCard(cardDeck.getCard())
-    }
-}
-
 private fun initGame() {
     cardDeck
     initDeal()
@@ -32,6 +25,13 @@ private fun initGame() {
     println("Hello $name, and Welcome to the greatest implementation of blackjack thes worlds ever seen! \n The cards have been dealt, the players are ready. Lets Go!")
     println(name + ", your initial hand is the " + playersHand.returnPretty()[0] + " & " + playersHand.returnPretty()[1] + "\n This leaves you with a grand total of " + playersHand.returnTotal())
     println("\n The dealers top card is the " + dealersHand.returnPretty()[1])
+}
+
+private fun initDeal() {
+    for (i in 1..2) {
+        playersHand.addCard(cardDeck.getCard())
+        dealersHand.addCard(cardDeck.getCard())
+    }
 }
 
 fun stickOrTwist() {

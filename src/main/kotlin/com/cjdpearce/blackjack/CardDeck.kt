@@ -18,7 +18,7 @@ class CardDeck {
             cardDeck[suit + "J"] = "10"
             cardDeck[suit + "Q"] = "10"
             cardDeck[suit + "K"] = "10"
-            cardDeck[suit + "A"] = "10"
+            cardDeck[suit + "A"] = "11"
         }
     }
 
