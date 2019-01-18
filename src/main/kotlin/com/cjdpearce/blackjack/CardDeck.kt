@@ -10,15 +10,15 @@ class CardDeck {
     }
 
     private fun buildDeck() {
-        var suits: ArrayList<String> = arrayListOf("H", "C", "D", "S")
+        var suits: ArrayList<String> = arrayListOf("Hearts", "Clubs", "Diamonds", "Spades")
         for (suit in suits) {
             for (i in 1..10) {
                 cardDeck[suit + i] = i.toString()
             }
-            cardDeck[suit + "J"] = "10"
-            cardDeck[suit + "Q"] = "10"
-            cardDeck[suit + "K"] = "10"
-            cardDeck[suit + "A"] = "11"
+            cardDeck[suit + "Jack"] = "10"
+            cardDeck[suit + "Queen"] = "10"
+            cardDeck[suit + "King"] = "10"
+            cardDeck[suit + "Ace"] = "11"
         }
     }
 

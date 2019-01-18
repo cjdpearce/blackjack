@@ -7,6 +7,9 @@ private var playerStick = false
 
 fun main(args: Array<String>) {
     initGame()
+    if(playersHand.returnTotal()==21){
+        endGame()
+    }
     while (playersHand.returnTotal() < 21 && !playerStick) {
         stickOrTwist()
     }
@@ -58,7 +61,7 @@ fun stickOrTwist() {
 fun endGame() {
     println("You have chosen to stick! lets see how you did")
     println("The dealer has ")
-    for (card in dealersHand.cardHand) println(card)
+    for (card in dealersHand.returnPretty()) println(card)
     println("Their grand total is " + dealersHand.returnTotal() + "\n")
 
     if (dealersHand.returnTotal() < 17) {
@@ -67,7 +70,7 @@ fun endGame() {
             dealersHand.addCard(cardDeck.getCard())
         }
         println("The dealer has ")
-        for (card in dealersHand.cardHand) println(card)
+        for (card in dealersHand.returnPretty()) println(card)
         println("Their grand total is " + dealersHand.returnTotal() + "\n")
     }
 
@@ -77,5 +80,6 @@ fun endGame() {
         playersHand.returnTotal() == dealersHand.returnTotal() -> println("its a tie! Unbelievable Jeff")
         else -> println("Better luck next time")
     }
+    System.exit(0)
 }
 
