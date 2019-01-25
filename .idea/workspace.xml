@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="814583d4-91fd-4076-8000-ef52756ad85e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blackjack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/cjdpearce/blackjack/HelloTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/cjdpearce/blackjack/HelloTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/blackjack.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/blackjack.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjdpearce/blackjack/HelloKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjdpearce/blackjack/cardHand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cjdpearce/blackjack/cardHand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cjdpearce/blackjack/HelloTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cjdpearce/blackjack/HelloTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LogicController.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LogicController.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
-              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="-1025">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -47,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
@@ -91,9 +84,9 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/cardDeck.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/cardHand.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/CardDeck.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt" />
       </list>
     </option>
   </component>
@@ -295,6 +288,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -446,17 +440,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="80" column="68" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/cjdpearce/blackjack/LogicController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1025">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>

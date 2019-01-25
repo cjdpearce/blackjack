@@ -4,8 +4,9 @@ private var playersHand = CardHand()
 private var dealersHand = CardHand()
 private var cardDeck = CardDeck()
 private var playerStick = false
+var name = ""
 
-    fun main(args: Array<String>) {
+fun main(args: Array<String>) {
         initGame()
         while (playersHand.returnTotal() < 21 && !playerStick) {
             stickOrTwist()
@@ -21,10 +22,18 @@ private var playerStick = false
         cardDeck
         initDeal()
         println("To start off Sir/Madam, could you please tell me your first name?")
-        val name = readLine()?.toLowerCase()?.capitalize()
-        println("Hello $name, and Welcome to the greatest implementation of blackjack thes worlds ever seen! \n The cards have been dealt, the players are ready. Lets Go!")
+        name = readLine()!!.toLowerCase()?.capitalize()
+        println("Hello $name, and Welcome to the greatest implementation of blackjack the worlds ever seen! \n The cards have been dealt, the players are ready. Lets Go!")
         println(name + ", your initial hand is the " + playersHand.returnPretty()[0] + " & " + playersHand.returnPretty()[1] + "\n This leaves you with a grand total of " + playersHand.returnTotal())
         println("\n The dealers top card is the " + dealersHand.returnPretty()[1])
+
+        println("While you are here... Would you like a nice cup of Yorkshire Tea? Y/N")
+        var teaWanted = readLine()
+        if(teaWanted=="Y"){
+            println("Certainly " +name +", we shall prepare for you right away!")
+        }else{
+            println("No worries, if you require a cup of tea during the game at any point, just say 'tea' ;)")
+        }
     }
 
     private fun initDeal() {
@@ -52,6 +61,8 @@ private var playerStick = false
             println("Your updated deck is ")
             for (card in playersHand.returnPretty()) println(card)
             println("With a grand score of " + playersHand.returnTotal())
+        }else if(playersChoice == "tea"){
+            println("Certainly " +name +", we shall prepare for you right away!")
         }
     }
 
