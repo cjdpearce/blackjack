@@ -59,6 +59,10 @@ fun stickOrTwist() {
 }
 
 fun endGame() {
+    if(playersHand.returnTotal()==21){
+        println("Congratulations, you have hit 21! Unbelievable Jeff")
+        System.exit(0)
+    }
     println("You have chosen to stick! lets see how you did")
     println("The dealer has ")
     for (card in dealersHand.returnPretty()) println(card)
@@ -76,9 +80,10 @@ fun endGame() {
 
     println("Your score is " + playersHand.returnTotal())
     when {
-        playersHand.returnTotal() > dealersHand.returnTotal() -> println("congratulations you win!")
-        playersHand.returnTotal() == dealersHand.returnTotal() -> println("its a tie! Unbelievable Jeff")
-        else -> println("Better luck next time")
+        playersHand.returnTotal() > dealersHand.returnTotal() -> println("Congratulations you win!")
+        playersHand.returnTotal() == dealersHand.returnTotal() -> println("Its a tie! Unbelievable Jeff")
+        playersHand.returnTotal() < dealersHand.returnTotal() && dealersHand.returnTotal() < 21 -> println("Sorry you lose, Better luck next time")
+        dealersHand.returnTotal() > 21 -> println("Dealer has gone bust, you win!")
     }
     System.exit(0)
 }

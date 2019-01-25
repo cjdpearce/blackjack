@@ -2,7 +2,7 @@ package com.cjdpearce.blackjack
 
 class CardDeck {
     private var cardDeck: MutableMap<String, String> = mutableMapOf()
-    var cards: MutableList<String> = mutableListOf()
+    private var cards: MutableList<String> = mutableListOf()
 
     init {
         buildDeck()
@@ -12,7 +12,7 @@ class CardDeck {
     private fun buildDeck() {
         var suits: ArrayList<String> = arrayListOf("Hearts", "Clubs", "Diamonds", "Spades")
         for (suit in suits) {
-            for (i in 1..10) {
+            for (i in 2..10) {
                 cardDeck[suit + i] = i.toString()
             }
             cardDeck[suit + "Jack"] = "10"
