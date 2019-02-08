@@ -1,5 +1,7 @@
 package com.cjdpearce.blackjack
 
+import javax.swing.text.View
+
 private var playersHand = CardHand()
 private var dealersHand = CardHand()
 private var cardDeck = CardDeck()
@@ -62,7 +64,7 @@ fun main(args: Array<String>) {
             for (card in playersHand.returnPretty()) println(card)
             println("With a grand score of " + playersHand.returnTotal())
         }else if(playersChoice == "tea"){
-            println("Certainly " +name +", we shall prepare for you right away!")
+            println("Certainly $name, we shall prepare for you right away!")
         }
     }
 
